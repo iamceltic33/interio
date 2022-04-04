@@ -1,0 +1,35 @@
+.header {
+    padding: 52px 100px 89px;
+  }
+  
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header__logo {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 90%;
+    font-family: "Open Sans Condensed", sans-serif;
+    letter-spacing: 0.01em;
+  }
+  
+  .header__links {
+    color: #000;
+    font-size: 24px;
+    line-height: 25px;
+    display: flex;
+    gap: 183px;
+  }
+  
+  .header__links a {
+    color: #000;
+  }
+  
+  .header__icons {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+  }

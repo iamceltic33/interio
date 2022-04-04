@@ -1,0 +1,253 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  padding: 52px 100px 89px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 90%;
+  font-family: "Open Sans Condensed", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.header__links {
+  color: #000;
+  font-size: 24px;
+  line-height: 25px;
+  display: flex;
+  gap: 183px;
+}
+
+.header__links a {
+  color: #000;
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.main {
+  padding-bottom: 107px;
+}
+
+.main__heading {
+  text-align: center;
+  font-size: 64px;
+  line-height: 60px;
+  font-weight: 400;
+  padding-bottom: 54px;
+}
+
+.main__sort {
+  font-size: 34px;
+  line-height: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 71px;
+  padding-bottom: 36px;
+}
+
+.main__sort-link_active {
+  text-decoration: underline;
+}
+
+.main__content-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 320px;
+  list-style-type: disc;
+  font-family: Open Sans;
+  font-size: 22px;
+  line-height: 90%;
+  gap: 10px;
+  margin-bottom: 68px;
+  align-content: stretch;
+}
+
+.main__list-item {
+  width: 20%;
+}
+
+.main__list-item_last {
+  margin-bottom: 25px;
+}
+
+.main__list-container {
+  padding: 0 240px;
+}
+
+.main__list-expand {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 172px;
+}
+
+.footer {
+  padding: 0 100px;
+}
+
+.footer::before {
+  display: block;
+  content: "";
+  border: 1px solid #c4c4c4;
+  margin-bottom: 19px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 29px;
+  height: 45px;
+}
+
+.footer__logo-split {
+  border: 1px solid #C4C4C4;
+  height: 100%;
+}
+
+.footer__links-item {
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.footer__middle {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.footer__title {
+  font-size: 30px;
+  line-height: 90%;
+  margin-bottom: 9.38px;
+}
+
+.footer__logo-text {
+  font-family: "Open Sans Condensed";
+  font-size: 24px;
+  line-height: 90%;
+  font-weight: 300;
+}
+
+.footer__feedback {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__feedback-text {
+  margin-bottom: 10px;
+}
+
+.footer__link-feedback {
+  font-size: 15px;
+  line-height: 90%;
+  display: flex;
+  align-items: center;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+  background: #f3efe8;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */

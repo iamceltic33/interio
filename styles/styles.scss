@@ -1,0 +1,16 @@
+@import '_reset.scss';
+@import '_header.scss';
+@import '_main-page.scss';
+@import '_footer.scss';
+html {
+    font-size: 14px;
+  }
+  
+  body {
+    font-family: "PT Sans Narrow", sans-serif;
+    background: #f3efe8;
+  }
+
+  .hidden {
+      display: none;
+  }
