@@ -56,12 +56,12 @@
             <h1 class="main__heading">Энциклопедия интерьерных стилей</h1>
             <ul class="main__sort">
                 <li class="main__sort-item">
-                    <a href="#" class="main__sort-link main__sort-link_active">
+                    <a href="#" class="main__sort-link main__sort-link_active sort-group">
                         Группами
                     </a>
                 </li>
                 <li class="main__sort-item">
-                    <a href="#" class="main__sort-link">
+                    <a href="#" class="main__sort-link sort-list">
                         Списком
                     </a>
                 </li>
@@ -76,7 +76,7 @@
             </ul>
         </header>
         <div class="main__content">
-            <div class="main__list-container">
+            <div class="main__list-container hidden">
                 <ul class="main__content-list">
                     <li class="main__list-item">
                         <a href="#" class="main__list-link">
@@ -275,7 +275,7 @@
                     </li>
                 </ul>
                 <div class="main__list-expand">Моего стиля нет в списке</div>
-                <div class="main__content-list-expantion">
+                <div class="main__content-list-expantion hidden">
                     <ul class="main__content-list">
                         <li class="main__list-item">
                             <a href="#" class="main__list-link">
@@ -470,40 +470,103 @@
                             </a>
                         </li>
                     </ul>
+                    <button type="button" class="arrow-up button">
+                        <svg width="100" height="100" viewBox="0 0 100 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect y="100" width="100" height="100" rx="50" transform="rotate(-90 0 100)" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M31.7266 43.0743C31.2995 43.5014 31.2995 44.1939 31.7266 44.6211C32.1537 45.0482 32.8463 45.0482 33.2734 44.6211L48.9062 28.9882L48.9063 72.9687C48.9063 73.5728 49.3959 74.0625 50 74.0625C50.6041 74.0625 51.0938 73.5728 51.0938 72.9687L51.0937 28.9882L66.7265 44.621C67.1537 45.0482 67.8462 45.0482 68.2733 44.621C68.7005 44.1939 68.7005 43.5014 68.2733 43.0742L51.9335 26.7344C50.8656 25.6665 49.1343 25.6665 48.0665 26.7344L31.7266 43.0743Z"
+                                fill="#797874" />
+                            <path
+                                d="M50 99.5C22.6619 99.5 0.5 77.3381 0.5 50C0.5 22.6619 22.6619 0.5 50 0.5C77.3381 0.5 99.5 22.6619 99.5 50C99.5 77.3381 77.3381 99.5 50 99.5Z"
+                                stroke="black" stroke-opacity="0.5" />
+                        </svg>
+
+                    </button>
                 </div>
             </div>
-            <!-- <div class="main__content-groups">
+            <div class="main__content-groups">
                 <div class="arrow-left hidden">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="100" y="100" width="100" height="100" rx="50" transform="rotate(-180 100 100)"
+                            fill="#F3EFE8" />
                         <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M12.0316 7.16854C12.2146 6.98549 12.5114 6.98549 12.6945 7.16854C12.8776 7.3516 12.8776 7.6484 12.6945 7.83146L5.99471 14.5312L24.8435 14.5313C25.1024 14.5313 25.3123 14.7411 25.3123 15C25.3123 15.2589 25.1024 15.4688 24.8435 15.4688L5.99472 15.4687L12.6945 22.1685C12.8775 22.3516 12.8775 22.6484 12.6945 22.8314C12.5114 23.0145 12.2146 23.0145 12.0316 22.8314L5.02878 15.8286C4.57114 15.371 4.57114 14.629 5.02878 14.1714L12.0316 7.16854Z"
-                            fill="black" fill-opacity="0.5" />
+                            d="M43.0743 68.2734C43.5014 68.7005 44.1939 68.7005 44.6211 68.2734C45.0482 67.8463 45.0482 67.1537 44.6211 66.7266L28.9882 51.0937L72.9688 51.0937C73.5728 51.0937 74.0625 50.6041 74.0625 50C74.0625 49.3959 73.5728 48.9062 72.9688 48.9062L28.9882 48.9062L44.621 33.2735C45.0482 32.8463 45.0482 32.1538 44.621 31.7267C44.1939 31.2995 43.5014 31.2995 43.0742 31.7267L26.7344 48.0665C25.6665 49.1344 25.6665 50.8657 26.7344 51.9335L43.0743 68.2734Z"
+                            fill="#797874" />
                     </svg>
+
+
                 </div>
                 <div class="arrow-right hidden">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="100" rx="50" fill="#F3EFE8" />
                         <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M17.9682 7.16854C17.7851 6.98549 17.4883 6.98549 17.3053 7.16854C17.1222 7.3516 17.1222 7.6484 17.3053 7.83146L24.0051 14.5312L5.15625 14.5313C4.89737 14.5313 4.6875 14.7411 4.6875 15C4.6875 15.2589 4.89737 15.4688 5.15625 15.4688L24.005 15.4687L17.3053 22.1685C17.1222 22.3516 17.1222 22.6484 17.3053 22.8314C17.4883 23.0145 17.7851 23.0145 17.9682 22.8314L24.971 15.8286C25.4286 15.371 25.4286 14.629 24.971 14.1714L17.9682 7.16854Z"
-                            fill="black" fill-opacity="0.5" />
+                            d="M56.9257 31.7266C56.4986 31.2995 55.8061 31.2995 55.3789 31.7266C54.9518 32.1537 54.9518 32.8463 55.3789 33.2734L71.0118 48.9062L27.0313 48.9063C26.4272 48.9063 25.9375 49.3959 25.9375 50C25.9375 50.6041 26.4272 51.0938 27.0313 51.0938L71.0118 51.0937L55.379 66.7265C54.9518 67.1537 54.9518 67.8462 55.379 68.2733C55.8061 68.7005 56.4986 68.7005 56.9258 68.2733L73.2656 51.9335C74.3335 50.8656 74.3335 49.1343 73.2656 48.0665L56.9257 31.7266Z"
+                            fill="#797874" />
                     </svg>
+
+
                 </div>
                 <div class="main__categories">
 
 
-                    <div class="category-choice-item">
+                    <div class="category-choice-item" data-category="Античность">
                         <div class="category-image-container">
-                            <img src="" alt="category" class="category-image">
+                            <img src="assets/pic_antih.png" alt="category" class="category-image">
                         </div>
                         <div class="category-title">
-
+                            Античность
                         </div>
                     </div>
-
+                    <div class="category-choice-item" data-category="Ближний Восток и Африка">
+                        <div class="category-image-container">
+                            <img src="assets/pic_Vostok_africa.png" alt="category" class="category-image">
+                        </div>
+                        <div class="category-title">
+                            Ближний Восток и Африка
+                        </div>
+                    </div>
+                    <div class="category-choice-item" data-category="Восточная Азия">
+                        <div class="category-image-container">
+                            <img src="assets/pic_Azia.png" alt="category" class="category-image">
+                        </div>
+                        <div class="category-title">
+                            Восточная Азия
+                        </div>
+                    </div>
+                    <div class="category-choice-item" data-category="Модернизм чистых форм">
+                        <div class="category-image-container">
+                            <img src="assets/pic_modernizm.png" alt="category" class="category-image">
+                        </div>
+                        <div class="category-title">
+                            Модернизм чистых форм
+                        </div>
+                    </div>
+                    <div class="category-choice-item" data-category="Декоративный модернизм">
+                        <div class="category-image-container">
+                            <img src="assets/pic_decor_modernizm.png" alt="category" class="category-image">
+                        </div>
+                        <div class="category-title">
+                            Декоративный модернизм
+                        </div>
+                    </div>
+                    <div class="category-choice-item" data-category="Европейская этника">
+                        <div class="category-image-container">
+                            <img src="assets/pic_europ_etnica 1.png" alt="category" class="category-image">
+                        </div>
+                        <div class="category-title">
+                            Европейская этника
+                        </div>
+                    </div>
                 </div>
                 <div class="main__posts hidden">
+                    <div class="main__breadcrumbs"><a href="#" class="breadcrumbs-back">Группами</a> / <span
+                            class="current"></span></div>
+                    <div class="main__posts-container">
 
+                    </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 
@@ -543,6 +606,9 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

@@ -2,6 +2,9 @@
 .main {
     padding-bottom: 107px;
   }
+  .main__header {
+    margin-bottom: 58px;
+  }
   .main__heading {
     text-align: center;
     font-size: 64px;
@@ -51,4 +54,80 @@
     text-decoration-line: underline;
     color: rgba(0, 0, 0, 0.8);
     margin-bottom: 172px;
+    cursor: pointer;
+  }
+  .main__content-list-expantion {
+    position: relative;
+    padding-bottom: 285px;
+  }
+  .arrow-up {
+    position: absolute;
+    right: -50px;
+    bottom: 84px;
+  }
+  .main__content-groups {
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    margin-bottom: 156px;
+  }
+  
+  .main__categories {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+  }
+  
+  .category-image-container, .post-image-container {
+    width: 250px;
+    height: 438px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  
+  .category-image {
+    display: block;
+    width: 100%;
+  }
+  .category-choice-item {
+    cursor: pointer;
+  }
+  
+  .category-title {
+    font-size: 23px;
+    line-height: 20px;
+  }
+  .main__posts-container {
+    display: flex;
+    gap: 28px;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .main__breadcrumbs {
+    font-size: 16px;
+    margin-bottom: 66px;
+    padding-left: 139px;
+  }
+
+  .post-item_first {
+    margin-left: 140px;
+  }
+
+  .arrow-right,
+  .arrow-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 20px;
+    z-index: 999;
+  }
+  
+  .arrow-right {
+    right: 80px;
+  }
+  
+  .arrow-left {
+    left: 80px;
   }

@@ -8,9 +8,17 @@ html {
   
   body {
     font-family: "PT Sans Narrow", sans-serif;
-    background: #f3efe8;
+    background-color: #f3efe8;
+    background-image: url('../assets/bg.png');
+    background-position: 4px 68px;
+    background-repeat: no-repeat;
   }
 
   .hidden {
       display: none;
+  }
+
+  .button {
+    border: none;
+    background-color: transparent;
   }
