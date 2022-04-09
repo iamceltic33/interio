@@ -1,7 +1,7 @@
 // main-page
 let arrowUpButton = document.querySelector('.arrow-up'),
     expantionList = document.querySelector('.main__content-list-expantion'),
-    expand = document.querySelector('.main__list-expand'),
+    expand = document.querySelector('.main__list-expand-decor'),
     sortLinkGroup = document.querySelector('.sort-group'),
     sortLinkList = document.querySelector('.sort-list'),
     listContainer = document.querySelector('.main__list-container'),
@@ -13,7 +13,8 @@ let arrowUpButton = document.querySelector('.arrow-up'),
     backLink = document.querySelector('.breadcrumbs-back'),
     currentGroup = document.querySelector('.current'),
     arrowLeft = document.querySelector(".arrow-left"),
-    arrowRight = document.querySelector(".arrow-right");
+    arrowRight = document.querySelector(".arrow-right"),
+    mainSortList = document.querySelector(".main__sort");
 
 const groups = {
     "Античность": [
@@ -67,7 +68,11 @@ const groups = {
 }
 
 expand.addEventListener("click", () => {
-    expantionList.classList.remove("hidden")
+    expantionList.classList.remove("hidden");
+    window.scrollTo({
+        top: 839,
+        behavior: 'smooth'
+    })
 })
 
 arrowUpButton.addEventListener("click", () => {
@@ -92,18 +97,22 @@ sortLinkList.addEventListener("click", (event) => {
 
 categories.forEach(item => {
     item.addEventListener("click", () => {
+        mainSortList.classList.add("hidden");
         let cat = item.dataset.category;
         currentGroup.textContent = cat;
         let posts = groups[cat];
         postContainer.innerHTML = '';
         if (posts.length > 6) {
             arrowRight.classList.remove("hidden")
-            arrowLeft.classList.remove("hidden")
+            // arrowLeft.classList.remove("hidden")
+            postContainer.style.justifyContent = "flex-start";
+        } else {
+            postContainer.style.justifyContent = "center";
         }
         posts.forEach((post, index) => {
             postContainer.insertAdjacentHTML('beforeend',
                 `
-                    <div class="post-item${index == 0 && posts.length > 6 ? ' post-item_first' : ''}" >
+                    <div class="post-item${index == 0 && posts.length > 6 ? ' post-item_first' : ''} ${index == posts.length - 1 && posts.length > 6 ? ' post-item_last' : ''}" >
                                 <div class="post-image-container">
                                     <a class="post-link-image" href="${post.link}">
                                         <img alt="post image" src="${post.image}" class="category-image">
@@ -123,6 +132,19 @@ categories.forEach(item => {
     })
 })
 
+postContainer.addEventListener("scroll", () => {
+    if (postContainer.scrollLeft > 0) {
+        arrowLeft.classList.remove("hidden");
+    } else {
+        arrowLeft.classList.add("hidden");
+    }
+    if (postContainer.scrollLeft < postContainer.scrollWidth - postContainer.clientWidth) {
+        arrowRight.classList.remove("hidden");
+    } else {
+        arrowRight.classList.add("hidden");
+    }
+})
+
 backLink.addEventListener("click", event => {
     event.preventDefault();
     categoriesContainer.classList.remove("hidden");
@@ -130,9 +152,10 @@ backLink.addEventListener("click", event => {
     postContainer.innerHTML = "";
     arrowRight.classList.add("hidden")
     arrowLeft.classList.add("hidden")
+    mainSortList.classList.remove("hidden");
 })
 
-let amountScroll = 500;
+let amountScroll = 278;
 arrowRight.addEventListener("click", function () {
     postContainer.scrollBy({
         top: 0, left: amountScroll, behavior: "smooth"
@@ -142,4 +165,37 @@ arrowLeft.addEventListener("click", function () {
     postContainer.scrollBy({
         top: 0, left: -amountScroll, behavior: "smooth"
     })
+})
+
+
+let menuCat = document.querySelector(".menu__item-categories"),
+    catList = document.querySelector(".menu__categories-list"),
+    categoriesMenuItems = document.querySelectorAll(".menu__category-link"),
+    menu = document.querySelector(".header__menu"),
+    menuContainer = document.querySelector(".header__menu-list"),
+    menuBtn = document.querySelector(".header__menu-icon")
+
+menuCat.addEventListener("click", function () {
+    menuCat.classList.toggle("menu__item-categories_opened");
+    catList.classList.toggle("hidden");
+})
+
+categoriesMenuItems.forEach((item) => {
+    item.addEventListener("click", function () {
+        item.classList.toggle("menu__category-link_opened");
+        item.nextElementSibling.classList.toggle("hidden");
+    })
+})
+
+// menuBtn.addEventListener("click", function () {
+//     menuContainer.classList.toggle("hidden");
+// })
+
+menu.addEventListener("click", function (event) {
+    event.stopPropagation();
+    if (event.target != menuBtn) menuContainer.classList.remove("hidden");
+})
+
+document.body.addEventListener("click", function (event) {
+    if (event.target != menu) menuContainer.classList.add("hidden");
 })

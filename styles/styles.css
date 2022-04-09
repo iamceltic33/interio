@@ -81,7 +81,8 @@ button {
   font-weight: 300;
   font-size: 48px;
   line-height: 90%;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-stretch: condensed;
   letter-spacing: 0.01em;
 }
 
@@ -103,20 +104,94 @@ button {
   gap: 38px;
 }
 
+.header__menu {
+  position: relative;
+}
+
+.header__menu-list {
+  position: absolute;
+  top: calc(100% + 20px);
+  right: 0;
+  background: #f3efe8;
+  width: 316px;
+  z-index: 999;
+  font-size: 16px;
+  line-height: 130%;
+  border: 1px solid #6F6D6D;
+  border-radius: 6px 0px 6px 6px;
+}
+
+.menu__item {
+  border-bottom: 0.5px solid #C4C4C4;
+  cursor: pointer;
+}
+
+.menu__link {
+  display: block;
+  padding: 15px 20px;
+}
+
+.menu__item-categories {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item-categories::after {
+  content: url("../assets/open-close-icon.svg");
+  transition: transform 0.7s;
+  transform-origin: 50% 60%;
+}
+
+.menu__item-categories_opened::after {
+  transform: scaleY(-1);
+}
+
+.menu__category-item {
+  border-top: 0.5px solid #C4C4C4;
+}
+
+.menu__category-link {
+  display: block;
+  padding: 10px 20px;
+}
+
+.menu__category-link::before {
+  display: inline-block;
+  content: url("../assets/open-close-icon.svg");
+  transition: transform 0.7s;
+  margin-right: 5px;
+  transform-origin: 50% 60%;
+}
+
+.menu__category-link_opened::before {
+  transform: scaleY(-1);
+}
+
+.menu__post-list {
+  border-top: 0.5px solid #C4C4C4;
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
+
+.menu__post-item {
+  padding: 3px 37px;
+}
+
+.header__menu-icon {
+  border: none;
+  background-color: transparent;
+}
+
 .main {
   padding-bottom: 107px;
 }
 
-.main__header {
-  margin-bottom: 58px;
-}
-
 .main__heading {
   text-align: center;
-  font-size: 64px;
-  line-height: 60px;
+  font-size: 72px;
+  line-height: 65px;
   font-weight: 400;
-  padding-bottom: 54px;
+  padding-bottom: 33px;
 }
 
 .main__sort {
@@ -128,34 +203,41 @@ button {
   padding-bottom: 36px;
 }
 
-.main__sort-link_active {
-  text-decoration: underline;
+.main__sort-link:hover {
+  border-bottom: 1px solid black;
 }
 
 .main__content-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 320px;
-  list-style-type: disc;
+  height: 325px;
   font-family: Open Sans;
   font-size: 22px;
   line-height: 90%;
-  gap: 10px;
+  gap: 11px;
   margin-bottom: 68px;
   align-content: stretch;
+  list-style-type: disc;
 }
 
 .main__list-item {
   width: 20%;
+  font-size: 22px;
+  line-height: 90%;
+}
+
+.main__list-link {
+  display: inline-block;
+  transform: translateX(-15px);
 }
 
 .main__list-item_last {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .main__list-container {
-  padding: 0 240px;
+  padding: 56px 240px 0;
 }
 
 .main__list-expand {
@@ -164,11 +246,14 @@ button {
   font-weight: 400;
   font-size: 22px;
   line-height: 150%;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
   color: rgba(0, 0, 0, 0.8);
   margin-bottom: 172px;
+}
+
+.main__list-expand-decor {
   cursor: pointer;
+  -webkit-text-decoration: underline 0.5px;
+          text-decoration: underline 0.5px;
 }
 
 .main__content-list-expantion {
@@ -178,7 +263,7 @@ button {
 
 .arrow-up {
   position: absolute;
-  right: -50px;
+  right: -150px;
   bottom: 84px;
 }
 
@@ -187,6 +272,9 @@ button {
   overflow-y: hidden;
   position: relative;
   margin-bottom: 156px;
+  background-image: url("../assets/group-bg.png");
+  background-repeat: no-repeat;
+  padding-top: 56px;
 }
 
 .main__categories {
@@ -220,17 +308,21 @@ button {
   display: flex;
   gap: 28px;
   overflow: hidden;
-  justify-content: center;
 }
 
 .main__breadcrumbs {
-  font-size: 16px;
-  margin-bottom: 66px;
+  font-family: "PT Sans Narrow";
+  font-size: 24px;
+  margin-bottom: 40px;
   padding-left: 139px;
 }
 
 .post-item_first {
   margin-left: 140px;
+}
+
+.post-item_last {
+  margin-right: 122px;
 }
 
 .arrow-right,
@@ -336,7 +428,7 @@ body {
   font-family: "PT Sans Narrow", sans-serif;
   background-color: #f3efe8;
   background-image: url("../assets/bg.png");
-  background-position: 4px 68px;
+  background-position: 291px -52px;
   background-repeat: no-repeat;
 }
 

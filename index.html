@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:ital,wght@0,300;1,400&family=PT+Sans+Narrow&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75,300;0,100,300;0,100,400;1,100,400&family=PT+Sans+Narrow&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Interio</title>
@@ -22,9 +22,9 @@
                 Interio
             </div>
             <ul class="header__links">
-                <li><a href="#">Стили</a></li>
+                <li><a href="#">Авторы</a></li>
                 <li><a href="#">Тест</a></li>
-                <li><a href="#">Где я</a></li>
+                <li><a href="#">Где я?</a></li>
             </ul>
             <div class="header__icons">
                 <div class="header__search">
@@ -39,13 +39,118 @@
 
                 </div>
                 <div class="header__menu">
-                    <svg class="header__menu-icon" width="27" height="27" viewBox="0 0 27 27" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.5 6H4.5" stroke="black" stroke-opacity="0.5" stroke-linecap="round" />
-                        <path d="M22.5 13H4.5" stroke="black" stroke-opacity="0.5" stroke-linecap="round" />
-                        <path d="M22.5 20H4.5" stroke="black" stroke-opacity="0.5" stroke-linecap="round" />
-                    </svg>
-
+                    <button class="header__menu-icon" type="menu">
+                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5 6H4.5" stroke="black" stroke-opacity="0.5" stroke-linecap="round" />
+                            <path d="M22.5 13H4.5" stroke="black" stroke-opacity="0.5" stroke-linecap="round" />
+                            <path d="M22.5 20H4.5" stroke="black" stroke-opacity="0.5" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <ul class="header__menu-list menu hidden">
+                        <li class="menu__item">
+                            <a class="menu__link menu__item-categories">Стили (группы)</a>
+                            <ul class="menu__categories-list hidden">
+                                <li class="menu__category-item">
+                                    <a class="menu__category-link">Античность</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Ампир</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Барокко</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Бидермейер</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Греческий</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Классицизм</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Ренесанс</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Римский</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Рококо</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__category-item"><a class="menu__category-link">Ближний Восток и
+                                        Африка</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Арабский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Африканский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Египетский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Османский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Персидский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Индийский</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__category-item"><a class="menu__category-link">Восточная Азия</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Бали</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Китайский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Шинуазри</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Японский</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__category-item"><a class="menu__category-link">Модернизм чистых форм</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Mid-century
+                                                modern</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Био-тек</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#"
+                                                class="menu__post-link">Индустриальный</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#"
+                                                class="menu__post-link">Конструктивизм</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Минимализм</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#"
+                                                class="menu__post-link">Неопластицизм</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#"
+                                                class="menu__post-link">Функционализм</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Хай-тек</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__category-item"><a class="menu__category-link">Декоративный
+                                        модернизм</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Ар-нуво</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Ар-деко</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Кубизм</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#"
+                                                class="menu__post-link">Постмодернизм</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__category-item"><a class="menu__category-link">Европейская этника</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Arts and
+                                                Crafts</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Византийский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Готический</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Романика</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Русский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Рустик</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="#" class="menu__link">Тест</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Где я</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -274,7 +379,8 @@
                         </a>
                     </li>
                 </ul>
-                <div class="main__list-expand">Моего стиля нет в списке</div>
+                <div class="main__list-expand"><span class="main__list-expand-decor">Моего стиля нет в списке</span>
+                </div>
                 <div class="main__content-list-expantion hidden">
                     <ul class="main__content-list">
                         <li class="main__list-item">
@@ -560,7 +666,7 @@
                     </div>
                 </div>
                 <div class="main__posts hidden">
-                    <div class="main__breadcrumbs"><a href="#" class="breadcrumbs-back">Группами</a> / <span
+                    <div class="main__breadcrumbs"><a href="#" class="breadcrumbs-back">Группы</a> / <span
                             class="current"></span></div>
                     <div class="main__posts-container">
 
@@ -586,9 +692,9 @@
 
             <div class="footer__right">
                 <ul class="footer__links">
-                    <li class="footer__links-item"><a href="#" class="footer__link">Стили</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Авторы</a></li>
                     <li class="footer__links-item"><a href="#" class="footer__link">Тест</a></li>
-                    <li class="footer__links-item"><a href="#" class="footer__link">О нас</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Где я?</a></li>
                     <li class="footer__links-item footer__feedback">
                         <span class="footer__feedback-text">Обратная связь</span>
                         <a href="mailto:theuderichos@ya.ru" class="footer__link-feedback">
