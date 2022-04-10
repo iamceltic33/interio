@@ -1,0 +1,56 @@
+.where-body {
+    background-image: url(../assets/whereami-bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 118px;
+}
+
+.where-main__heading {
+    width: 750px;    
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 48px;
+    font-stretch: condensed;
+    line-height: 100%;
+    text-align: center;    
+    margin-inline: auto;
+    margin-bottom: 67px;
+}
+.where-main {
+    padding-bottom: 281px;    
+}
+.where-main__container {
+    display: flex;
+    gap: 98px;
+    justify-content: center;
+}
+.where-main__columns {
+    width: 605px;
+}
+.where-main__qa-post {
+    margin-bottom: 46px;
+    min-height: 167px;
+}
+.where-main__qa-title {
+    font-family: 'PT Sans Narrow';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 90%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.where-main__qa-answer {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;    
+}
+.where-main__qa-note {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 16px;
+    line-height: 150%;    
+    margin-top: 14px;
+}
+.where-main__qa-note-image {
+    vertical-align: middle;
+}

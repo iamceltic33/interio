@@ -1,0 +1,525 @@
+!
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75,300;0,75,400;0,100,300;0,100,400;1,100,400&family=PT+Sans&family=PT+Sans+Narrow&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Interio</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="/">Interio</a>
+            </div>
+            <ul class="header__links">
+                <li><a href="#">Авторы</a></li>
+                <li><a href="#">Тест</a></li>
+                <li><a href="#">Где я?</a></li>
+            </ul>
+            <div class="header__icons">
+                <div class="header__search">
+                    <svg class="header__search-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M26.773 28.7073C25.7434 29.5331 24.4362 30.027 23.0136 30.027C19.6924 30.027 17 27.3347 17 24.0135C17 20.6923 19.6924 18 23.0136 18C26.3349 18 29.0272 20.6923 29.0272 24.0135C29.0272 25.4362 28.5332 26.7435 27.7073 27.7732L32 32.0658L31.0658 33L26.773 28.7073ZM27.7061 24.0135C27.7061 26.605 25.6052 28.7058 23.0136 28.7058C20.4221 28.7058 18.3212 26.605 18.3212 24.0135C18.3212 21.422 20.4221 19.3211 23.0136 19.3211C25.6052 19.3211 27.7061 21.422 27.7061 24.0135Z"
+                            fill="black" fill-opacity="0.5" />
+                    </svg>
+                    <input class="header__search-input" type="text" placeholder="Поиск...">
+
+                </div>
+                <div class="header__menu">
+                    <button class="header__menu-icon" type="menu">
+                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5 6H4.5" stroke="black" stroke-opacity="0.5" stroke-linecap="round" />
+                            <path d="M22.5 13H4.5" stroke="black" stroke-opacity="0.5" stroke-linecap="round" />
+                            <path d="M22.5 20H4.5" stroke="black" stroke-opacity="0.5" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <ul class="header__menu-list menu hidden">
+                        <li class="menu__item">
+                            <a class="menu__link menu__item-categories">Стили (группы)</a>
+                            <ul class="menu__categories-list hidden">
+                                <li class="menu__category-item">
+                                    <a class="menu__category-link">Античность</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Ампир</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Барокко</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Бидермейер</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Греческий</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Классицизм</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Ренесанс</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Римский</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Рококо</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__category-item"><a class="menu__category-link">Ближний Восток и
+                                        Африка</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Арабский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Африканский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="posts/egyptian.html"
+                                                class="menu__post-link">Египетский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Османский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Персидский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Индийский</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__category-item"><a class="menu__category-link">Восточная Азия</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Бали</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Китайский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Шинуазри</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Японский</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__category-item"><a class="menu__category-link">Модернизм чистых форм</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Mid-century
+                                                modern</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Био-тек</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#"
+                                                class="menu__post-link">Индустриальный</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#"
+                                                class="menu__post-link">Конструктивизм</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Минимализм</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#"
+                                                class="menu__post-link">Неопластицизм</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#"
+                                                class="menu__post-link">Функционализм</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Хай-тек</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__category-item"><a class="menu__category-link">Декоративный
+                                        модернизм</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Ар-нуво</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Ар-деко</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Кубизм</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#"
+                                                class="menu__post-link">Постмодернизм</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__category-item"><a class="menu__category-link">Европейская этника</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Arts and
+                                                Crafts</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Византийский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Готический</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Романика</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Русский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Рустик</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="#" class="menu__link">Тест</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Где я</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <article class="article">
+        <h1 class="article__heading">Египетский
+        </h1>
+        <div class="article__linked">
+            <span class="article__attention">
+                Связанные стили:
+            </span>
+            <a href="#" class="article__linked-item">арабский</a>,
+            <a href="#" class="article__linked-item">берберский</a>,
+            <a href="#" class="article__linked-item">североафриканский</a>,
+            <a href="#" class="article__linked-item">ампир</a>,
+            <a href="#" class="article__linked-item">ар-деко</a>
+        </div>
+        <p class="article__paragraph">
+            Мир пирамид, золотых колесниц, птицеголовых богов и монументальных париков привлекал иностранцев во все
+            времена: Пифагор
+            и Аристотель, Плутарх и Юлий Цезарь, Исаак Ньютон и Наполеон Бонапарт пытались разгадать загадку Египта,
+            да так и не смогли.
+        </p>
+        <p class="article__paragraph">
+            Отголоски этих попыток преследуют нас повсюду: на улицах Парижа, Петербурга
+            и Рима, в ампирной мебели, в эстетике «ревущих двадцатых», на реверсе долларовых банкнот и даже в названии
+            одной весьма
+            почтенной науки. Сказать по чести, в модных интерьерах последних двадцати лет они встречаются куда реже, чем
+            в начале
+            XIX и XX веков. Но все же не так уж редко.
+        </p>
+        <div class="article__divider-decorative"></div>
+        <p class="article__paragraph">Пример ниже представляет собой тот редкий случай хорошей стилизации, когда прямое
+            цитирование самых очевидных и
+            узнаваемых мотивов не превращает интерьер в дешевый китч.
+
+
+        </p>
+        <p class="article__paragraph">Как дизайнеру удалось этого добиться?</p>
+        <p class="article__paragraph article__paragraph_italic article__paragraph_marker">Предметы и поверхности не
+            сияют новизной. Декор ведет себя благовоспитанно
+            и старается выглядеть скромнее и проще, чем есть на самом деле. За исключением полированного столика и
+            кое-каких
+            бронзовых деталей все поверхности матовые.
+        </p>
+        <p class="article__paragraph article__paragraph_italic article__paragraph_marker">Обилие мелких деталей и
+            сложный текстиль уравновешиваются сдержанным цветовым
+            решением. В мягком свете от окна ни один
+            элемент не кричит
+            и не выпрашивает внимания.</p>
+        <p class="article__paragraph article__paragraph_italic article__paragraph_marker">В интерьере нет ни одного
+            грубого элемента. Ручная роспись стен и декор столбиков
+            выполнены тонко и изящно, на
+            элегантном легконогом столике расположились
+            не менее элегантные винтажные часы. В раме на причудливой подставке — зарисовка головы в античном духе.</p>
+        <div class="article__points-container points">
+            <img src="../assets/east-and-africa/egypt/pic1.jpg" alt="pic" class="points__image">
+            <div class="points__point points__point_big" data-x="99.1" data-y="140"></div>
+            <div class="points__info-box points__info-box_left">
+                <img class="points__info-image" src="../assets/east-and-africa/egypt/points1.jpg" alt="info image">
+                <p class="points__info-text">
+                    В руках у сидящей музыкантши изображена так называемая дуговая арфа. Арфа считалась престижным
+                    инструментом
+                    и, помимо чисто увеселительных мероприятий, использовалась также
+                    и в храмовых празднествах.
+                </p>
+            </div>
+            <div class="points__point" data-x="510" data-y="160"></div>
+            <div class="points__info-box points__info-box_right">
+                <img class="points__info-image" src="../assets/east-and-africa/egypt/points3.jpg" alt="info image">
+                <p class="points__info-text">
+                    Полуарки ненавязчиво поддерживают архитектурную тему: они напоминают одновременно и египетские
+                    карнизы
+                    с выкружкой, и полукруглые своды, которые встречаются порой в культовых сооружениях.
+                </p>
+            </div>
+            <div class="points__point" data-x="26" data-y="314"></div>
+            <div class="points__info-box points__info-box_left">
+                <img class="points__info-image" src="../assets/east-and-africa/egypt/points2.jpg" alt="info image">
+                <p class="points__info-text">
+                    Нильский лотос, или, точнее, водяная лилия – один из главных символов Египта, распространенный мотив
+                    декоративной
+                    росписи и ювелирного дела.
+                    По представлениям египтян, из лотоса рождается Солнце.
+
+                </p>
+            </div>
+
+            <div class="points__point" data-x="509" data-y="456"></div>
+            <div class="points__info-box points__info-box_right">
+                <img class="points__info-image" src="../assets/east-and-africa/egypt/points5.jpg" alt="info image">
+                <p class="points__info-text">
+                    Кровать и пол демонстрируют едва ли
+                    не полный набор орнаментов Нильской долины: полоска, мелкая клетка, зигзаг, цветы и птицы (в данном
+                    случае – коршун,
+                    символ богини Нехбет).
+                </p>
+            </div>
+
+            <div class="points__point" data-x="666" data-y="427"></div>
+            <div class="points__info-box points__info-box_right">
+                <img class="points__info-image" src="../assets/east-and-africa/egypt/points4.jpg" alt="info image">
+                <p class="points__info-text">
+                    Навершия столбиков кровати выполнены
+                    в виде бутонов лотоса, подобно колоннам египетских храмов, изображавших пальмы, лилии или связки
+                    папируса. Сами столбики
+                    расписаны орнаментом в виде зеленых перьев с золотой обводкой – одно из классических цветовых
+                    сочетаний.
+                </p>
+            </div>
+        </div>
+        <div class="article__divider-decorative"></div>
+        <div class="article__points-container points">
+            <img src="../assets/east-and-africa/egypt/pic2.jpg" alt="pic" class="points__image">
+            <div class="points__point points__point" data-x="63" data-y="154"></div>
+            <div class="points__info-box points__info-box_left">
+                <img class="points__info-image" src="../assets/east-and-africa/egypt/points6.jpg" alt="info image">
+                <p class="points__info-text">
+                    Зеркало и консоль выполнены в русле египетской архитектурной традиции. Пилястры и ножки
+                    заканчиваются пальмовидными
+                    капителями, два карниза имеют характерную выкружку и украшены пальмовыми же листьями. Полуэллипс
+                    внизу столешницы
+                    напоминает крылья коршуна или сокола.
+                </p>
+            </div>
+            <div class="points__point points__point_big" data-x="106" data-y="274"></div>
+            <div class="points__info-box points__info-box_left">
+
+                <p class="points__info-text">Архаическая лошадиная голова привносит элемент эклектики и не позволяет
+                    интерьеру стать слишком серьезным.
+                </p>
+            </div>
+            <div class="points__point" data-x="347" data-y="609"></div>
+            <div class="points__info-box points__info-box_left">
+                <img class="points__info-image" src="../assets/east-and-africa/egypt/points7.jpg" alt="info image">
+                <p class="points__info-text">
+                    Кресла и диван чрезвычайно массивны
+                    и отвечают скорее ассиро-вавилонскому, нежели египетскому вкусу. От Египта здесь  плавные скругления
+                    подлокотников
+                    и  легкий наклон спинок, от Вавилонии – короткие ножки в виде перевернутых конусов.
+
+                </p>
+            </div>
+
+            <div class="points__point" data-x="604" data-y="632"></div>
+            <div class="points__info-box points__info-box_right">
+                <img class="points__info-image" src="../assets/east-and-africa/egypt/points8.jpg" alt="info image">
+                <p class="points__info-text">
+                    Журнальный стол, судя по всему – вариация на тему марокканских складных столиков
+                    с заменой латунного подноса
+                    на стеклянную столешницу. Ножки
+                    и крестовина выполнены из популярного
+                    у египтян черного дерева.
+                </p>
+            </div>
+        </div>
+        <p class="article__paragraph article__paragraph_italic">
+            Не имея ни одной строго египетской детали, кроме зеркала с консолью, этот интерьер, тем не менее, вполне
+            отражает самое
+            египетское и, шире, ближневосточное понимание монументальной эстетики.
+
+
+
+
+        </p>
+        <p class="article__paragraph article__paragraph_italic">Простые, несколько тяжеловесные формы позволяют
+            сосредоточить внимание зрителя на цвете и фактуре поверхностей. Автор
+            использует ультратрадиционное египетское сочетание: золото и глубокий синий, но намеренно снижает
+            интенсивность
+            последнего почти до антрацита, что позволяет гамме стать спокойнее и умереннее. Общий стиль при этом уходит
+            от
+            варварского экзотизма
+            и сближается с ар-деко.</p>
+        <p class="article__paragraph article__paragraph_italic">
+            Видимая нам часть интерьера состоит из двух композиций. Первая — группа
+            у дальней стены: пара светильников и полдюжины карандашных штудий во главе
+            с диваном. Вторая — столик, два кресла и зеркало между ними. Обе они,
+            если смотреть на каждую фронтально, исполнены одинаково: это две весьма устойчивых композиции. Обе
+            симметричны и вписаны
+            в треугольник, имеют в основании низкие, массивные золотые предметы и венчаются легкими светлыми
+            конструкциями. Если
+            дизайнер задумывал это как тонкую шутку на тему пирамид,
+            то она, пожалуй, удалась.
+        </p>
+        <div class="article__full-image-container">
+            <div class="article__dots article__dots_before">
+                <div class="article__dot"></div>
+                <div class="article__dot"></div>
+                <div class="article__dot"></div>
+            </div>
+            <img src="../assets/east-and-africa/egypt/full-image-1.jpg" alt="full-image-1" class="article__full-image">
+            <div class="article__dots article__dots_after">
+                <div class="article__dot"></div>
+                <div class="article__dot"></div>
+                <div class="article__dot"></div>
+            </div>
+        </div>
+        <h2 class="article__subheading">Контекст</h2>
+        <div class="article__paragraph">Около 5000 лет назад пара десятков городов-государств, расположенных по берегам
+            североафриканской реки Нил, объединились
+            в Египетскую державу под властью божественных царей. Нил давал египтянам воду для питья и орошения полей,
+            плодородный ил
+            <div class="article__popup">
+                <div class="article__popup-text">египтяне и страну свою звали «Черной землей», противопоставляя ее
+                    «Красной земле» — пустыне</div>
+            </div>
+            для взращивания пшеницы, папируса и льна, рыбу и птицу
+            <div class="article__popup">
+                <div class="article__popup-text">Довольно предсказуемым образом растения встречаются в декоративном
+                    искусстве Египта чаще всего; птицы — в первой пятерке
+                    мотивов.</div>
+            </div>
+            . Хапи, тучный синекожий бог разливов великой реки,
+            почитался в
+            числе главных богов, отождествляясь то с Хнумом, творцом людей, то с мировым океаном Нуном, отцом всех
+            богов.
+
+
+
+        </div>
+        <p class="article__paragraph">Колоссальный урожай зерна и контроль над крупнейшими золотоносными провинциями
+            обеспечили Египту экономическое лидерство
+            в регионе. Страна расцвела и стала одним из важнейших в мире центров науки и культуры на следующие три
+            тысячелетия.
+            Правители Месопотамии мечтали породниться с египетскими царями. Инженерные достижения египтян предопределили
+            развитие
+            минойской и микенской архитектуры. Лучшие ученые Древней Греции получали престижное образование
+            в Египте.</p>
+        <p class="article__paragraph">Кризис бронзового века поставил крест на многих цивилизациях своего времени.
+            Египет выжил, но прежнего блеска вернуть не
+            смог. В VII–IV веках его захватывали
+            то ассирийцы, то персы, то Александр Македонский, то Октавиан Август — виновник знаменитого самоубийства
+            Клеопатры VII.
+            Так Египет стал римской провинцией,
+            а еще через полтысячелетия самобытная египетская культура окончательно растворилась в огромном арабском
+            мире.</p>
+        <figure class="article__small-image-box">
+            <img src="../assets/east-and-africa/egypt/small-image-1.jpg" alt="small-image-1"
+                class="article__small-image">
+            <figcaption class="article__small-image-caption">
+                Сандалии из погребального инвентаря египетской царицы Тутмоса III в середине 18-й династии
+            </figcaption>
+        </figure>
+        <h2 class="article__subheading">Архитектура</h2>
+        <div class="article__paragraph">
+            Египтяне не знали сопромата <div class="article__popup">
+                <div class="article__popup-text">
+                    сопротивление материалов — раздел механики, который учит нас, как делать конструкции прочными и
+                    надежными
+                </div>
+            </div>, а потому всегда придавали своим
+            сооружениям избыточную прочность — так, на всякий случай.
+            Снаружи здания имели мощные глухие стены почти без окон. Для пущей устойчивости стены особо крупных
+            сооружений часто
+            строили наклонными
+            <div class="article__popup">
+                <div class="article__popup-text">пирамиды и обелиски — тоже частный случай такой методы</div>
+            </div>. Внутри длинные потолочные балки подпирались
+            многочисленными колоннами, которые египтяне специально
+            изобрели, чтобы
+            не ограничивать полет архитектурной мысли и строить храмы столь огромные,
+            что сегодня во многих из них уместился бы небольшой жилой комплекс.
+
+        </div>
+        <div class="article__gallery gallery">
+            <div class="gallery__counter">
+                <span class="gallery__current-index">1</span>
+                /
+                <span class="gallery__total">6</span>
+            </div>
+            <div class="gallery__image-box">
+                <figure class="gallery__slide gallery__slide_active">
+                    <img src="../assets/east-and-africa/egypt/gallery-1-image-1.jpg" alt="image" class="gallery__image">
+                    <figcaption class="gallery__caption">
+                        Колонны в храме Хнума, Эсна (180-45 до н. э.)
+                    </figcaption>
+                </figure>
+                <figure class="gallery__slide">
+                    <img src="../assets/east-and-africa/egypt/gallery-1-image-2.jpg" alt="image" class="gallery__image">
+                    <figcaption class="gallery__caption">
+                        Заупокойный храм Хатшепсут
+                        в Дейр-эль-Бахри
+                    </figcaption>
+                </figure>
+                <figure class="gallery__slide">
+                    <img src="../assets/east-and-africa/egypt/gallery-1-image-3.jpg" alt="image" class="gallery__image">
+                    <figcaption class="gallery__caption">
+                        Луксорский храм
+                    </figcaption>
+                </figure>
+                <figure class="gallery__slide">
+                    <img src="../assets/east-and-africa/egypt/gallery-1-image-4.jpg" alt="image" class="gallery__image">
+                    <figcaption class="gallery__caption">
+                        Луксорский храм
+                    </figcaption>
+                </figure>
+                <figure class="gallery__slide">
+                    <img src="../assets/east-and-africa/egypt/gallery-1-image-5.jpg" alt="image" class="gallery__image">
+                    <figcaption class="gallery__caption">
+                        Храм Эсне берег Хнума
+                    </figcaption>
+                </figure>
+                <figure class="gallery__slide">
+                    <img src="../assets/east-and-africa/egypt/gallery-1-image-6.jpg" alt="image" class="gallery__image">
+                    <figcaption class="gallery__caption">
+                        Храм Эсне берег Хнума
+                    </figcaption>
+                </figure>
+            </div>
+            <button type="button" class="gallery__arrow-left">
+                <svg width="37" height="14" viewBox="0 0 37 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M36 7L1 7L7 1" stroke="#6F6D6D" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M1 7L7 13" stroke="#6F6D6D" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+            <button type="button" class="gallery__arrow-right">
+                <svg width="37" height="14" viewBox="0 0 37 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7L36 7L30 0.999985" stroke="#6F6D6D" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M36 7L30 13" stroke="#6F6D6D" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__left">
+                <div class="footer__title">
+                    Энциклопедия интерьерных стилей
+                </div>
+                <div class="footer__logo">
+                    <img src="../assets/footer-logo.png" alt="Будка Теодориха">
+                    <div class="footer__logo-split"></div>
+                    <div class="footer__logo-text">Interio</div>
+                </div>
+
+            </div>
+
+            <div class="footer__right">
+                <ul class="footer__links">
+                    <li class="footer__links-item"><a href="#" class="footer__link">Авторы</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Тест</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Где я?</a></li>
+                    <li class="footer__links-item footer__feedback">
+                        <span class="footer__feedback-text">Обратная связь</span>
+                        <a href="mailto:theuderichos@ya.ru" class="footer__link-feedback">
+
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 6.25H18.75C18.983 6.25 19.2041 6.301 19.4027 6.39246L13.8927 11.9024C13.1299 12.6651 11.8933 12.6651 11.1305 11.9024L5.61322 6.38522C5.8077 6.29832 6.02321 6.25 6.25 6.25ZM4.99914 6.876C4.80344 7.13697 4.6875 7.4612 4.6875 7.8125V17.1875C4.6875 18.0504 5.38706 18.75 6.25 18.75H18.75C19.6129 18.75 20.3125 18.0504 20.3125 17.1875V7.8125C20.3125 7.46715 20.2005 7.14796 20.0107 6.88931L14.4451 12.4548C13.3773 13.5227 11.646 13.5227 10.5781 12.4548L4.99914 6.876ZM3.90625 7.8125C3.90625 6.51808 4.95558 5.46875 6.25 5.46875H18.75C20.0444 5.46875 21.0938 6.51808 21.0938 7.8125V17.1875C21.0938 18.4819 20.0444 19.5312 18.75 19.5312H6.25C4.95558 19.5312 3.90625 18.4819 3.90625 17.1875V7.8125Z"
+                                    fill="black" />
+                            </svg>
+                            theuderichos@ya.ru
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/points.js"></script>
+    <script src="../scripts/gallery.js"></script>
+</body>
+
+</html>

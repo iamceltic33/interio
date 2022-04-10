@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75,300;0,75,400;0,100,300;0,100,400;1,100,400&family=PT+Sans&family=PT+Sans+Narrow&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Interio</title>
+</head>
+
+<body class="where-body">
+    <header class="header">
+
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="/">Interio</a>
+            </div>
+            <ul class="header__links">
+                <li><a href="#">Авторы</a></li>
+                <li><a href="#">Тест</a></li>
+                <li><a href="#">Где я?</a></li>
+            </ul>
+            <div class="header__icons">
+                <div class="header__search">
+                    <svg class="header__search-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M26.773 28.7073C25.7434 29.5331 24.4362 30.027 23.0136 30.027C19.6924 30.027 17 27.3347 17 24.0135C17 20.6923 19.6924 18 23.0136 18C26.3349 18 29.0272 20.6923 29.0272 24.0135C29.0272 25.4362 28.5332 26.7435 27.7073 27.7732L32 32.0658L31.0658 33L26.773 28.7073ZM27.7061 24.0135C27.7061 26.605 25.6052 28.7058 23.0136 28.7058C20.4221 28.7058 18.3212 26.605 18.3212 24.0135C18.3212 21.422 20.4221 19.3211 23.0136 19.3211C25.6052 19.3211 27.7061 21.422 27.7061 24.0135Z"
+                            fill="black" fill-opacity="0.5" />
+                    </svg>
+                    <input class="header__search-input" type="text" placeholder="Поиск...">
+
+                </div>
+                <div class="header__menu">
+                    <button class="header__menu-icon" type="menu">
+                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5 6H4.5" stroke="black" stroke-opacity="0.5" stroke-linecap="round" />
+                            <path d="M22.5 13H4.5" stroke="black" stroke-opacity="0.5" stroke-linecap="round" />
+                            <path d="M22.5 20H4.5" stroke="black" stroke-opacity="0.5" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <ul class="header__menu-list menu hidden">
+                        <li class="menu__item">
+                            <a class="menu__link menu__item-categories">Стили (группы)</a>
+                            <ul class="menu__categories-list hidden">
+                                <li class="menu__category-item">
+                                    <a class="menu__category-link">Античность</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Ампир</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Барокко</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Бидермейер</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Греческий</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Классицизм</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Ренесанс</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Римский</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Рококо</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__category-item"><a class="menu__category-link">Ближний Восток и
+                                        Африка</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Арабский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Африканский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="posts/egyptian.html"
+                                                class="menu__post-link">Египетский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Османский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Персидский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Индийский</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__category-item"><a class="menu__category-link">Восточная Азия</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Бали</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Китайский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Шинуазри</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Японский</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__category-item"><a class="menu__category-link">Модернизм чистых форм</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Mid-century
+                                                modern</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Био-тек</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#"
+                                                class="menu__post-link">Индустриальный</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#"
+                                                class="menu__post-link">Конструктивизм</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Минимализм</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#"
+                                                class="menu__post-link">Неопластицизм</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#"
+                                                class="menu__post-link">Функционализм</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Хай-тек</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__category-item"><a class="menu__category-link">Декоративный
+                                        модернизм</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Ар-нуво</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Ар-деко</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Кубизм</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#"
+                                                class="menu__post-link">Постмодернизм</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__category-item"><a class="menu__category-link">Европейская этника</a>
+                                    <ul class="menu__post-list hidden">
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Arts and
+                                                Crafts</a></li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Византийский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Готический</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Романика</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Русский</a>
+                                        </li>
+                                        <li class="menu__post-item"><a href="#" class="menu__post-link">Рустик</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item"><a href="#" class="menu__link">Тест</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Где я</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="where-main">
+        <h1 class="where-main__heading">
+            Это – альбом-справочник по интерьерным стилям от начала истории до наших дней
+        </h1>
+        <div class="where-main__container">
+            <div class="where-main__columns where-main__columns-left">
+                <div class="where-main__qa-post">
+                    <h2 class="where-main__qa-title">Зачем это?
+                    </h2>
+                    <p class="where-main__qa-answer">Мы задумали сделать графическую шпаргалку, в которой были бы
+                        систематизированы и кратко описаны базовые черты основных
+                        стилей интерьера. Надеемся, что альбом интересен сведущим
+                        и понятен несведущим, удобен для быстрой навигации, стилевой атрибуции мебели и декора,
+                        сравнения стилей между собой.
+                    </p>
+                </div>
+                <div class="where-main__qa-post">
+                    <h2 class="where-main__qa-title">Для кого это?</h2>
+                    <p class="where-main__qa-answer">Мы делали альбом ради собственного удовольствия, но будем польщены,
+                        если он пригодится дизайнерам интерьера, дизайнерам
+                        мебели, студентам-культурологам, студентам историкам и просто любознательным мимокрокодилам.</p>
+                </div>
+            </div>
+            <div class="where-main__columns where-main__columns-right">
+                <div class="where-main__qa-post">
+                    <h2 class="where-main__qa-title">А вам можно верить?
+                    </h2>
+                    <p class="where-main__qa-answer">Альбом — не научная публикация, но и не сборник занимательных баек
+                        для начинающих экскурсоводов. Мы стараемся проверять
+                        информацию, не делать необоснованных обобщений и не писать ерунды. Если ерунда все равно
+                        прокралась, сообщите нам.
+                    </p>
+                </div>
+                <div class="where-main__qa-post">
+                    <h2 class="where-main__qa-title">Красть можно?</h2>
+                    <p class="where-main__qa-answer">Все тексты и некоторые изображения принадлежат нам
+                        и не предназначены для копирования. Если они нужны вам для хорошего дела, обсудите это с нами.
+                        Все остальные изображения
+                        взяты из открытых источников и принадлежат их авторам.</p>
+                    <div class="where-main__qa-note">Оригинальные изображения Interio помечены знаком
+                        <img alt="sign" src="assets/footer-logo.png" class="where-main__qa-note-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__left">
+                <div class="footer__title">
+                    Энциклопедия интерьерных стилей
+                </div>
+                <div class="footer__logo">
+                    <img src="assets/footer-logo.png" alt="Будка Теодориха">
+                    <div class="footer__logo-split"></div>
+                    <div class="footer__logo-text">Interio</div>
+                </div>
+
+            </div>
+
+            <div class="footer__right">
+                <ul class="footer__links">
+                    <li class="footer__links-item"><a href="#" class="footer__link">Авторы</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Тест</a></li>
+                    <li class="footer__links-item"><a href="#" class="footer__link">Где я?</a></li>
+                    <li class="footer__links-item footer__feedback">
+                        <span class="footer__feedback-text">Обратная связь</span>
+                        <a href="mailto:theuderichos@ya.ru" class="footer__link-feedback">
+
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 6.25H18.75C18.983 6.25 19.2041 6.301 19.4027 6.39246L13.8927 11.9024C13.1299 12.6651 11.8933 12.6651 11.1305 11.9024L5.61322 6.38522C5.8077 6.29832 6.02321 6.25 6.25 6.25ZM4.99914 6.876C4.80344 7.13697 4.6875 7.4612 4.6875 7.8125V17.1875C4.6875 18.0504 5.38706 18.75 6.25 18.75H18.75C19.6129 18.75 20.3125 18.0504 20.3125 17.1875V7.8125C20.3125 7.46715 20.2005 7.14796 20.0107 6.88931L14.4451 12.4548C13.3773 13.5227 11.646 13.5227 10.5781 12.4548L4.99914 6.876ZM3.90625 7.8125C3.90625 6.51808 4.95558 5.46875 6.25 5.46875H18.75C20.0444 5.46875 21.0938 6.51808 21.0938 7.8125V17.1875C21.0938 18.4819 20.0444 19.5312 18.75 19.5312H6.25C4.95558 19.5312 3.90625 18.4819 3.90625 17.1875V7.8125Z"
+                                    fill="black" />
+                            </svg>
+                            theuderichos@ya.ru
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="scripts/header.js"></script>
+</body>
+
+</html>

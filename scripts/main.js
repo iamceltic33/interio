@@ -27,7 +27,7 @@ const groups = {
         { title: "Ренессанс", image: "assets/antic/renessans.jpg", link: "#" }
     ],
     "Ближний Восток и Африка": [
-        { title: "Египетский", image: "assets/east-and-africa/egypt.jpg", link: "#" },
+        { title: "Египетский", image: "assets/east-and-africa/egypt.jpg", link: "posts/egyptian.html" },
         { title: "Африканский", image: "assets/east-and-africa/africa.jpg", link: "#" },
         { title: "Арабский", image: "assets/east-and-africa/arabic.jpg", link: "#" },
         { title: "Персидский", image: "assets/east-and-africa/persia.jpg", link: "#" },
@@ -170,10 +170,8 @@ arrowLeft.addEventListener("click", function () {
 
 let menuCat = document.querySelector(".menu__item-categories"),
     catList = document.querySelector(".menu__categories-list"),
-    categoriesMenuItems = document.querySelectorAll(".menu__category-link"),
-    menu = document.querySelector(".header__menu"),
-    menuContainer = document.querySelector(".header__menu-list"),
-    menuBtn = document.querySelector(".header__menu-icon")
+    categoriesMenuItems = document.querySelectorAll(".menu__category-link")
+
 
 menuCat.addEventListener("click", function () {
     menuCat.classList.toggle("menu__item-categories_opened");
@@ -191,11 +189,4 @@ categoriesMenuItems.forEach((item) => {
 //     menuContainer.classList.toggle("hidden");
 // })
 
-menu.addEventListener("click", function (event) {
-    event.stopPropagation();
-    if (event.target != menuBtn) menuContainer.classList.remove("hidden");
-})
 
-document.body.addEventListener("click", function (event) {
-    if (event.target != menu) menuContainer.classList.add("hidden");
-})

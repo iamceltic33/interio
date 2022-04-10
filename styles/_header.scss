@@ -33,6 +33,7 @@
     display: flex;
     align-items: center;
     gap: 38px;
+    justify-content: flex-end;
   }
   .header__menu{
     position: relative;
@@ -97,4 +98,36 @@
   .header__menu-icon {
     border: none;
     background-color: transparent;
+  }
+  .header__search {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;    
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    overflow: hidden;
+    transition: width 0.5s;
+  }
+  .header__search_open {
+    width: 362px;
+  }
+  .header__container>div {
+    width: calc(100% / 3);
+  }
+  .header__search-icon {
+    flex-shrink: 0;
+  }
+  .header__search-input {
+    border: none;
+    background-color: transparent;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 18px;
+        flex-grow: 1;
+        margin-right: 25px;
+  }
+  .header__search-input:focus {
+    outline: none;
   }
