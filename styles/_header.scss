@@ -108,7 +108,29 @@
     border: 1px solid rgba(0, 0, 0, 0.5);
     cursor: pointer;
     overflow: hidden;
-    transition: width 0.5s;
+    transition: width 0.5s;    
+    &-container {
+      position: relative;
+    }
+    &-results {
+      box-sizing: border-box;
+      position: absolute;
+      background: #f3efe8;
+      width: 362px;      
+      top: 60px;
+      line-height: 130%;
+      border: 1px solid #6F6D6D;
+      border-radius: 6px 0px 6px 6px;
+      padding: 20px;     
+    }           
+  }
+  .header__results-list {
+      display: flex;
+      flex-direction: column;    
+      &-item {
+        padding: 5px 0;
+        font-size: 20px;
+      }    
   }
   .header__search_open {
     width: 362px;

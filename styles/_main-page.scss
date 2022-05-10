@@ -130,7 +130,7 @@
   .arrow-right,
   .arrow-left {
     position: absolute;
-    top: 50%;
+    top: calc(50% + 40px);
     transform: translateY(-50%);
     cursor: pointer;
     padding: 20px;

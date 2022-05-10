@@ -189,4 +189,3 @@ categoriesMenuItems.forEach((item) => {
 //     menuContainer.classList.toggle("hidden");
 // })
 
-

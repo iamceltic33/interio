@@ -27,15 +27,23 @@
                 <li><a href="whereami.html">Где я?</a></li>
             </ul>
             <div class="header__icons">
-                <div class="header__search">
-                    <svg class="header__search-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M26.773 28.7073C25.7434 29.5331 24.4362 30.027 23.0136 30.027C19.6924 30.027 17 27.3347 17 24.0135C17 20.6923 19.6924 18 23.0136 18C26.3349 18 29.0272 20.6923 29.0272 24.0135C29.0272 25.4362 28.5332 26.7435 27.7073 27.7732L32 32.0658L31.0658 33L26.773 28.7073ZM27.7061 24.0135C27.7061 26.605 25.6052 28.7058 23.0136 28.7058C20.4221 28.7058 18.3212 26.605 18.3212 24.0135C18.3212 21.422 20.4221 19.3211 23.0136 19.3211C25.6052 19.3211 27.7061 21.422 27.7061 24.0135Z"
-                            fill="black" fill-opacity="0.5" />
-                    </svg>
-                    <input class="header__search-input" type="text" placeholder="Поиск...">
+                <div class="header__search-container">
+                    <div class="header__search">
+                        <svg class="header__search-icon" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M26.773 28.7073C25.7434 29.5331 24.4362 30.027 23.0136 30.027C19.6924 30.027 17 27.3347 17 24.0135C17 20.6923 19.6924 18 23.0136 18C26.3349 18 29.0272 20.6923 29.0272 24.0135C29.0272 25.4362 28.5332 26.7435 27.7073 27.7732L32 32.0658L31.0658 33L26.773 28.7073ZM27.7061 24.0135C27.7061 26.605 25.6052 28.7058 23.0136 28.7058C20.4221 28.7058 18.3212 26.605 18.3212 24.0135C18.3212 21.422 20.4221 19.3211 23.0136 19.3211C25.6052 19.3211 27.7061 21.422 27.7061 24.0135Z"
+                                fill="black" fill-opacity="0.5" />
+                        </svg>
+                        <input class="header__search-input" type="text" placeholder="Поиск...">
 
+                    </div>
+                    <div class="header__search-results hidden">
+                        <div class="header__search-loader hidden">Поиск...</div>
+                        <div class="header__results-list">
+
+                        </div>
+                    </div>
                 </div>
                 <div class="header__menu">
                     <button class="header__menu-icon" type="menu">

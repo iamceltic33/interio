@@ -194,6 +194,29 @@ button {
   overflow: hidden;
   transition: width 0.5s;
 }
+.header__search-container {
+  position: relative;
+}
+.header__search-results {
+  box-sizing: border-box;
+  position: absolute;
+  background: #f3efe8;
+  width: 362px;
+  top: 60px;
+  line-height: 130%;
+  border: 1px solid #6F6D6D;
+  border-radius: 6px 0px 6px 6px;
+  padding: 20px;
+}
+
+.header__results-list {
+  display: flex;
+  flex-direction: column;
+}
+.header__results-list-item {
+  padding: 5px 0;
+  font-size: 20px;
+}
 
 .header__search_open {
   width: 362px;
@@ -367,7 +390,7 @@ button {
 .arrow-right,
 .arrow-left {
   position: absolute;
-  top: 50%;
+  top: calc(50% + 40px);
   transform: translateY(-50%);
   cursor: pointer;
   padding: 20px;
@@ -657,11 +680,12 @@ button {
   position: relative;
 }
 .article__popup:hover .article__popup-text {
-  display: block;
+  display: inline-block;
 }
 
 .article__popup-text {
-  width: 450px;
+  min-width: 270px;
+  max-width: 450px;
   position: absolute;
   bottom: 100%;
   left: 100%;
@@ -670,6 +694,11 @@ button {
   border: 1px solid #6F6D6D;
   border-radius: 10px 10px 10px 0px;
   display: none;
+}
+
+.article__carousel {
+  margin-top: 60px;
+  margin-bottom: 24px;
 }
 
 .points {
@@ -817,7 +846,7 @@ button {
   height: 350px;
 }
 .slider__caption {
-  width: 251px;
+  width: 614px;
   font-family: "Open Sans";
   font-size: 16px;
   line-height: 120%;
@@ -856,6 +885,87 @@ button {
   border-top: 10px solid transparent;
   border-left: 20px solid #fff;
   border-bottom: 10px solid transparent;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel__arrow {
+  background: linear-gradient(270deg, #F3EFE8 -3%, rgba(243, 239, 232, 0) 133%);
+  border-radius: 50%;
+  padding: 0;
+}
+.carousel__image-container {
+  overflow: hidden;
+  position: relative;
+  height: 450px;
+}
+.carousel__image {
+  height: 450px;
+  position: absolute;
+  transition: left 0.7s;
+}
+.carousel__slider-info {
+  width: 775px;
+  margin-inline: auto;
+  height: 1px;
+  background-color: rgba(111, 109, 109, 0.6);
+  margin-top: 23px;
+}
+.carousel__borders-box {
+  box-sizing: border-box;
+  width: 705px;
+  margin-inline: auto;
+  height: 10px;
+  transform: translateY(-50%);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.carousel__border {
+  height: 12px;
+}
+.carousel__slider-icon {
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
+  border: 1px solid #6F6D6D;
+  border-radius: 50%;
+  position: absolute;
+  left: 12px;
+  background-color: #f3efe8;
+}
+.carousel__hr {
+  margin-top: 29px;
+  width: 775px;
+}
+
+.colors-box {
+  width: 100%;
+  margin-top: 71px;
+  height: 900px;
+  display: flex;
+}
+.colors-box__image {
+  height: 900px;
+}
+.colors-box__color {
+  text-align: right;
+}
+.colors-box__color-name {
+  display: inline-block;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  transform: translateY(-28px);
+  cursor: pointer;
+  font-stretch: condensed;
+}
+.colors-box__color-name::after {
+  content: url("../assets/east-and-africa/egypt/copy-icon.png");
+  margin-left: 5px;
 }
 
 html {
