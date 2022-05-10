@@ -701,6 +701,24 @@ button {
   margin-bottom: 24px;
 }
 
+.article__side-box {
+  position: absolute;
+  right: 0;
+  display: flex;
+}
+
+.article__side-text {
+  font-family: "Open Sans";
+  width: 300px;
+  font-style: italic;
+  line-height: 140%;
+  color: #6F6D6D;
+}
+
+.article__side-image {
+  transform: translateY(-40%);
+}
+
 .points {
   width: 700px;
   margin-inline: auto;
@@ -888,6 +906,8 @@ button {
 }
 
 .carousel {
+  overflow: hidden;
+  height: 450px;
   position: relative;
 }
 .carousel__arrow {
@@ -897,13 +917,20 @@ button {
 }
 .carousel__image-container {
   overflow: hidden;
-  position: relative;
-  height: 450px;
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  left: 0;
+  top: 0;
+  display: flex;
+  gap: 2px;
+  padding-right: 2px;
+  transition: left 0.7s;
 }
 .carousel__image {
   height: 450px;
-  position: absolute;
-  transition: left 0.7s;
+  flex-shrink: 0;
 }
 .carousel__slider-info {
   width: 775px;
@@ -943,6 +970,7 @@ button {
 .colors-box {
   width: 100%;
   margin-top: 71px;
+  margin-bottom: 24px;
   height: 900px;
   display: flex;
 }

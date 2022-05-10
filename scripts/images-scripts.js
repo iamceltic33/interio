@@ -37,51 +37,80 @@ imageSliders.forEach(slider => {
     })
 })
 
-let carouselContainer = document.querySelector(".carousel__image-container"),
-    arrowLeft = document.querySelector(".carousel__arrow.arrow-left"),
-    arrowRight = document.querySelector(".carousel__arrow.arrow-right"),
-    images = document.getElementsByClassName("carousel__image");
+let carousels = document.querySelectorAll(".carousel");
 
-const imageWidth = 300, imageOffset = 2;
-const scrollAmount = imageWidth + imageOffset;
-
-for (let i = 0; i < images.length - 1; i++) {
-    images[i].style.left = scrollAmount * i + "px";
-}
-images[images.length - 1].style.left = -scrollAmount + "px";
-let index = 0;
-let isAnimating = false;
-arrowLeft.addEventListener("click", () => {
-    if (isAnimating) return false;
-    isAnimating = true;
+carousels.forEach(carousel => {
+    let imageContainer = carousel.querySelector(".carousel__image-container"),
+        arrowLeft = carousel.querySelector(".arrow-left"),
+        arrowRight = carousel.querySelector(".arrow-right"),
+        images = carousel.querySelectorAll(".carousel__image"),
+        index = 0;
+    let counter = 0;
     for (let image of images) {
-        let initialLeft = parseInt(image.style.left.slice(0, -2));
-        console.log(initialLeft, scrollAmount * (images.length - 1));
-        if (initialLeft < scrollAmount * (images.length - 2)) {
-            image.style.left = (initialLeft + scrollAmount) + "px";
-        } else {
-            image.style.zIndex = -1;
-            image.style.left = -scrollAmount + "px"
-            setTimeout(() => { image.style.zIndex = 0 }, 700)
-        }
+        image.addEventListener("load", () => {
+            counter++;
+            if (counter == images.length) {
+                initiateCarousel();
+            }
+        })
     }
-    setTimeout(() => isAnimating = false, 700)
-})
+    function initiateCarousel() {
+        let imageContainerClone = imageContainer.cloneNode(true);
+        imageContainerClone.classList.add("clone");
+        let containerWidth = parseFloat(getComputedStyle(imageContainer).width);
+        imageContainerClone.style.left = -containerWidth + "px";
+        imageContainer.style.left = "0px";
+        carousel.prepend(imageContainerClone);
 
-arrowRight.addEventListener("click", () => {
-    if (isAnimating) return false;
-    isAnimating = true;
-    for (let image of images) {
-        let initialLeft = parseInt(image.style.left.slice(0, -2));
-        if (initialLeft > -scrollAmount) {
-            image.style.left = (initialLeft - scrollAmount) + "px";
-        } else {
-            image.style.zIndex = -1;
-            image.style.left = scrollAmount * (images.length - 2) + "px"
-            setTimeout(() => { image.style.zIndex = 0 }, 700)
-        }
+        arrowRight.addEventListener("click", function () {
+            index++;
+            if (index >= images.length) index = 0;
+            let scrollAmount = images[index].width != 0 ? images[index].width : 300;
+            scrollAmount += 2;
+            if (parseFloat(imageContainer.style.left) < -containerWidth + scrollAmount) {
+                imageContainer.style.display = "none";
+                imageContainer.style.left = (containerWidth + scrollAmount + 2) + "px";
+                setTimeout(() => {
+                    imageContainer.style.display = "";
+                })
+            }
+            imageContainer.style.left = parseFloat(imageContainer.style.left) - scrollAmount + "px";
+
+            if (parseFloat(imageContainerClone.style.left) < -containerWidth + scrollAmount) {
+                imageContainerClone.style.display = "none";
+                imageContainerClone.style.left = (containerWidth - scrollAmount) + "px";
+                setTimeout(() => {
+                    imageContainerClone.style.display = "";
+                })
+            } else {
+                imageContainerClone.style.left = parseFloat(imageContainerClone.style.left) - scrollAmount + "px";
+            }
+        })
+
+        arrowLeft.addEventListener("click", function () {
+            index--;
+            if (index < 0) index = images.length - 1;
+            let scrollAmount = images[index].width != 0 ? images[index].width + 2 : 302;
+            if (parseFloat(imageContainer.style.left) > containerWidth - scrollAmount) {
+                imageContainer.style.display = "none";
+                imageContainer.style.left = -(containerWidth + scrollAmount) + "px";
+                setTimeout(() => {
+                    imageContainer.style.display = "";
+                })
+            }
+            imageContainer.style.left = parseFloat(imageContainer.style.left) + scrollAmount + "px";
+
+            if (parseFloat(imageContainerClone.style.left) > containerWidth - scrollAmount - 2) {
+                imageContainerClone.style.display = "none";
+                imageContainerClone.style.left = -(containerWidth) + "px";
+                setTimeout(() => {
+                    imageContainerClone.style.display = "";
+                })
+            } else {
+                imageContainerClone.style.left = parseFloat(imageContainerClone.style.left) + scrollAmount + "px";
+            }
+        })
     }
-    setTimeout(() => isAnimating = false, 700)
 })
 
 // coloristic
