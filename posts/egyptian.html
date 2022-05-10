@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75,300;0,75,400;0,100,300;0,100,400;1,100,400&family=PT+Sans&family=PT+Sans+Narrow&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"></script>
     <title>Interio</title>
 </head>
 
@@ -648,53 +649,72 @@
             В&nbsp;качестве компромисса подойдут реплики (или подлинники, если ваш заказчик богат) небольших статуэток
             с&nbsp;изображениями богов и&nbsp;людей.
         </div>
-        <div class="article__carousel carousel">
-            <div class="carousel__arrow arrow-left">
-                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="100" y="100" width="100" height="100" rx="50" transform="rotate(-180 100 100)" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M43.0743 68.2734C43.5014 68.7005 44.1939 68.7005 44.6211 68.2734C45.0482 67.8463 45.0482 67.1537 44.6211 66.7266L28.9882 51.0937L72.9688 51.0937C73.5728 51.0937 74.0625 50.6041 74.0625 50C74.0625 49.3959 73.5728 48.9062 72.9688 48.9062L28.9882 48.9062L44.621 33.2735C45.0482 32.8463 45.0482 32.1538 44.621 31.7267C44.1939 31.2995 43.5014 31.2995 43.0742 31.7267L26.7344 48.0665C25.6665 49.1344 25.6665 50.8657 26.7344 51.9335L43.0743 68.2734Z"
-                        fill="#797874" />
-                </svg>
+        <div class="article__carousel splide">
+            <div class="splide__arrows">
+                <button class="carousel__arrow arrow-left splide__arrow splide__arrow--prev">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="100" y="100" width="100" height="100" rx="50" transform="rotate(-180 100 100)" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M43.0743 68.2734C43.5014 68.7005 44.1939 68.7005 44.6211 68.2734C45.0482 67.8463 45.0482 67.1537 44.6211 66.7266L28.9882 51.0937L72.9688 51.0937C73.5728 51.0937 74.0625 50.6041 74.0625 50C74.0625 49.3959 73.5728 48.9062 72.9688 48.9062L28.9882 48.9062L44.621 33.2735C45.0482 32.8463 45.0482 32.1538 44.621 31.7267C44.1939 31.2995 43.5014 31.2995 43.0742 31.7267L26.7344 48.0665C25.6665 49.1344 25.6665 50.8657 26.7344 51.9335L43.0743 68.2734Z"
+                            fill="#797874" />
+                    </svg>
+                </button>
+
+                <button class="carousel__arrow arrow-right splide__arrow splide__arrow--next">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="100" rx="50" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M56.9257 31.7266C56.4986 31.2995 55.8061 31.2995 55.3789 31.7266C54.9518 32.1537 54.9518 32.8463 55.3789 33.2734L71.0118 48.9062L27.0313 48.9063C26.4272 48.9063 25.9375 49.3959 25.9375 50C25.9375 50.6041 26.4272 51.0938 27.0313 51.0938L71.0118 51.0937L55.379 66.7265C54.9518 67.1537 54.9518 67.8462 55.379 68.2733C55.8061 68.7005 56.4986 68.7005 56.9258 68.2733L73.2656 51.9335C74.3335 50.8656 74.3335 49.1343 73.2656 48.0665L56.9257 31.7266Z"
+                            fill="#797874" />
+                    </svg>
+                </button>
             </div>
-            <div class="carousel__image-container">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-1.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-2.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-3.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-4.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-5.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-6.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-7.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-8.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-9.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-10.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-11.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-12.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-13.jpg" alt="carousel-image"
-                    class="carousel__image">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <img src="../assets/east-and-africa/egypt/carousel-1-image-1.jpg" alt="carousel-image"
+                            class="carousel__image">
+                    </div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-2.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"> <img src="../assets/east-and-africa/egypt/carousel-1-image-3.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-4.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-5.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-6.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-7.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-8.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-9.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-10.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-11.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-12.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-13.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-14.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-15.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-16.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-17.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-18.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-1-image-19.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                </div>
             </div>
-            <div class="carousel__arrow arrow-right">
-                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="100" height="100" rx="50" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M56.9257 31.7266C56.4986 31.2995 55.8061 31.2995 55.3789 31.7266C54.9518 32.1537 54.9518 32.8463 55.3789 33.2734L71.0118 48.9062L27.0313 48.9063C26.4272 48.9063 25.9375 49.3959 25.9375 50C25.9375 50.6041 26.4272 51.0938 27.0313 51.0938L71.0118 51.0937L55.379 66.7265C54.9518 67.1537 54.9518 67.8462 55.379 68.2733C55.8061 68.7005 56.4986 68.7005 56.9258 68.2733L73.2656 51.9335C74.3335 50.8656 74.3335 49.1343 73.2656 48.0665L56.9257 31.7266Z"
-                        fill="#797874" />
-                </svg>
-            </div>
-            <hr class="carousel__hr">
         </div>
+        <hr class="article__divider">
         <h2 class="article__subheading">Колористика</h2>
         <div class="article__paragraph">
             Основной прием египетской колористики&nbsp;&mdash; дихотомия темного (от&nbsp;черного до&nbsp;синего,
@@ -782,52 +802,207 @@
             наклоном и&nbsp;рамные кровати,
             затянутые эластичной сеткой.
         </div>
-        <div class="article__carousel carousel">
-            <div class="carousel__arrow arrow-left">
-                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="100" y="100" width="100" height="100" rx="50" transform="rotate(-180 100 100)" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M43.0743 68.2734C43.5014 68.7005 44.1939 68.7005 44.6211 68.2734C45.0482 67.8463 45.0482 67.1537 44.6211 66.7266L28.9882 51.0937L72.9688 51.0937C73.5728 51.0937 74.0625 50.6041 74.0625 50C74.0625 49.3959 73.5728 48.9062 72.9688 48.9062L28.9882 48.9062L44.621 33.2735C45.0482 32.8463 45.0482 32.1538 44.621 31.7267C44.1939 31.2995 43.5014 31.2995 43.0742 31.7267L26.7344 48.0665C25.6665 49.1344 25.6665 50.8657 26.7344 51.9335L43.0743 68.2734Z"
-                        fill="#797874" />
+        <div class="article__carousel splide">
+            <div class="splide__arrows">
+                <button class="carousel__arrow arrow-left  splide__arrow splide__arrow--prev">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="100" y="100" width="100" height="100" rx="50" transform="rotate(-180 100 100)" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M43.0743 68.2734C43.5014 68.7005 44.1939 68.7005 44.6211 68.2734C45.0482 67.8463 45.0482 67.1537 44.6211 66.7266L28.9882 51.0937L72.9688 51.0937C73.5728 51.0937 74.0625 50.6041 74.0625 50C74.0625 49.3959 73.5728 48.9062 72.9688 48.9062L28.9882 48.9062L44.621 33.2735C45.0482 32.8463 45.0482 32.1538 44.621 31.7267C44.1939 31.2995 43.5014 31.2995 43.0742 31.7267L26.7344 48.0665C25.6665 49.1344 25.6665 50.8657 26.7344 51.9335L43.0743 68.2734Z"
+                            fill="#797874" />
+                    </svg>
+                </button>
+
+                <button class="carousel__arrow arrow-right splide__arrow splide__arrow--next">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="100" rx="50" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M56.9257 31.7266C56.4986 31.2995 55.8061 31.2995 55.3789 31.7266C54.9518 32.1537 54.9518 32.8463 55.3789 33.2734L71.0118 48.9062L27.0313 48.9063C26.4272 48.9063 25.9375 49.3959 25.9375 50C25.9375 50.6041 26.4272 51.0938 27.0313 51.0938L71.0118 51.0937L55.379 66.7265C54.9518 67.1537 54.9518 67.8462 55.379 68.2733C55.8061 68.7005 56.4986 68.7005 56.9258 68.2733L73.2656 51.9335C74.3335 50.8656 74.3335 49.1343 73.2656 48.0665L56.9257 31.7266Z"
+                            fill="#797874" />
+                    </svg>
+                </button>
+            </div>
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-1.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-2.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-3.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-4.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-5.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-6.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-7.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-8.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-9.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-10.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-11.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-12.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-13.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-14.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-15.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-16.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-17.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-18.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-19.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-2-image-20.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                </div>
+            </div>
+        </div>
+        <hr class="article__divider">
+        <h2 class="article__subheading">
+            Орнаменты и декоративные мотивы
+        </h2>
+        <p class="article__paragraph">
+            Орнаменты долины Нила можно условно разделить на&nbsp;две группы:
+            значащие и&nbsp;незначащие.
+        </p>
+        <p class="article__paragraph">
+            К&nbsp;незначащим относятся простейшие геометрические узоры типа полос, зигзагов, мелкой клетки. Вероятно,
+            в&nbsp;совсем уж&nbsp;седой древности они тоже обозначали что-нибудь вроде волн или пальмовой коры,
+            но&nbsp;смысл этих посланий затерся, и&nbsp;со&nbsp;временем такой декор стали использовать самым свободным
+            образом. Присмотритесь: многие знакомые нам клетчатые и&nbsp;полосатые вещи имеют ближневосточное
+            происхождение.
+        </p>
+        <div class="article__paragraph">
+            Значащие орнаменты всегда относятся к&nbsp;сфере божественного, священного, магического. Чаще всего они
+            связаны с&nbsp;животными и&nbsp;птицами, а&nbsp;также растениями и&nbsp;их&nbsp;частями. Рассказ
+            о&nbsp;символическом значении каждого мотива был&nbsp;бы слишком длинным, но&nbsp;отметим здесь, что
+            древность и&nbsp;важность этих символов требует к&nbsp;себе некоторого уважения. Египтяне никогда
+            не&nbsp;стали&nbsp;бы расписывать полы в&nbsp;спальне коронованными соколами<div class="article__popup">
+                <div class="article__popup-text">
+                    образ солнечного бога Хора
+                </div>
+            </div> и&nbsp;анкхами<div class="article__popup">
+                <div class="article__popup-text">
+                    египетский крест с&nbsp;петлей, символ жизни
+                </div>
+            </div>, не&nbsp;станем
+            делать этого и&nbsp;мы. Из&nbsp;невинных мотивов, не&nbsp;требующих особо трепетного отношения, можно
+            назвать лотос, папирус и&nbsp;раппортный<div class="article__popup">
+                <div class="article__popup-text">
+                    заполняющий пространство по&nbsp;вертикали и&nbsp;по&nbsp;горизонтали, как ковер
+                </div>
+            </div> чешуйчатый или перьевидный орнамент.
+        </div>
+        <div class="article__carousel splide">
+            <div class="splide__arrows">
+                <button class="carousel__arrow arrow-left  splide__arrow splide__arrow--prev">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="100" y="100" width="100" height="100" rx="50" transform="rotate(-180 100 100)" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M43.0743 68.2734C43.5014 68.7005 44.1939 68.7005 44.6211 68.2734C45.0482 67.8463 45.0482 67.1537 44.6211 66.7266L28.9882 51.0937L72.9688 51.0937C73.5728 51.0937 74.0625 50.6041 74.0625 50C74.0625 49.3959 73.5728 48.9062 72.9688 48.9062L28.9882 48.9062L44.621 33.2735C45.0482 32.8463 45.0482 32.1538 44.621 31.7267C44.1939 31.2995 43.5014 31.2995 43.0742 31.7267L26.7344 48.0665C25.6665 49.1344 25.6665 50.8657 26.7344 51.9335L43.0743 68.2734Z"
+                            fill="#797874" />
+                    </svg>
+                </button>
+
+                <button class="carousel__arrow arrow-right splide__arrow splide__arrow--next">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100" height="100" rx="50" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M56.9257 31.7266C56.4986 31.2995 55.8061 31.2995 55.3789 31.7266C54.9518 32.1537 54.9518 32.8463 55.3789 33.2734L71.0118 48.9062L27.0313 48.9063C26.4272 48.9063 25.9375 49.3959 25.9375 50C25.9375 50.6041 26.4272 51.0938 27.0313 51.0938L71.0118 51.0937L55.379 66.7265C54.9518 67.1537 54.9518 67.8462 55.379 68.2733C55.8061 68.7005 56.4986 68.7005 56.9258 68.2733L73.2656 51.9335C74.3335 50.8656 74.3335 49.1343 73.2656 48.0665L56.9257 31.7266Z"
+                            fill="#797874" />
+                    </svg>
+                </button>
+            </div>
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-3-image-1.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-3-image-2.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-3-image-3.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-3-image-4.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-3-image-5.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-3-image-6.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                    <div class="splide__slide"><img src="../assets/east-and-africa/egypt/carousel-3-image-7.jpg"
+                            alt="carousel-image" class="carousel__image"></div>
+                </div>
+            </div>
+        </div>
+        <hr class="article__divider">
+        <h2 class="article__subheading">Материалы</h2>
+        <div class="article__accordeon accordeon">
+            <button class="accordeon__button-collapse-all"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7L6 11L11 7" stroke="#1E1E1D" stroke-opacity="0.5" stroke-width="0.5"
+                        stroke-linecap="round" />
+                    <path d="M1 4L6 8L11 4" stroke="#1E1E1D" stroke-opacity="0.5" stroke-width="0.5"
+                        stroke-linecap="round" />
+                    <path d="M1 1L6 5L11 1" stroke="#1E1E1D" stroke-opacity="0.5" stroke-width="0.5"
+                        stroke-linecap="round" />
                 </svg>
+            </button>
+            <div class="accordeon__item">
+                <div class="accordeon__heading">Слоновая кость</div>
+                <div class="accordeon__content">
+                    <p class="accordeon__paragraph">
+                        Популярный материал для резьбы, а&nbsp;также для инкрустации в&nbsp;черно-белой гамме. Кстати,
+                        кость не&nbsp;всегда принадлежала слонам&nbsp;&mdash; египтяне не&nbsp;гнушались
+                        и&nbsp;бегемотами.
+                    </p>
+                    <img src="../assets/east-and-africa/egypt/materials-1.png" alt="accordeon image"
+                        class="accordeon__image">
+                </div>
             </div>
-            <div class="carousel__image-container">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-1.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-2.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-3.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-4.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-5.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-6.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-7.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-8.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-9.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-10.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-11.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-12.jpg" alt="carousel-image"
-                    class="carousel__image">
-                <img src="../assets/east-and-africa/egypt/carousel-1-image-13.jpg" alt="carousel-image"
-                    class="carousel__image">
+            <div class="accordeon__item">
+                <div class="accordeon__heading">Слоновая кость</div>
+                <div class="accordeon__content">
+                    <p class="accordeon__paragraph">
+                        Популярный материал для резьбы, а&nbsp;также для инкрустации в&nbsp;черно-белой гамме. Кстати,
+                        кость не&nbsp;всегда принадлежала слонам&nbsp;&mdash; египтяне не&nbsp;гнушались
+                        и&nbsp;бегемотами.
+                    </p>
+                    <img src="../assets/east-and-africa/egypt/materials-1.png" alt="accordeon image"
+                        class="accordeon__image">
+                </div>
             </div>
-            <div class="carousel__arrow arrow-right">
-                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="100" height="100" rx="50" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M56.9257 31.7266C56.4986 31.2995 55.8061 31.2995 55.3789 31.7266C54.9518 32.1537 54.9518 32.8463 55.3789 33.2734L71.0118 48.9062L27.0313 48.9063C26.4272 48.9063 25.9375 49.3959 25.9375 50C25.9375 50.6041 26.4272 51.0938 27.0313 51.0938L71.0118 51.0937L55.379 66.7265C54.9518 67.1537 54.9518 67.8462 55.379 68.2733C55.8061 68.7005 56.4986 68.7005 56.9258 68.2733L73.2656 51.9335C74.3335 50.8656 74.3335 49.1343 73.2656 48.0665L56.9257 31.7266Z"
-                        fill="#797874" />
-                </svg>
+            <div class="accordeon__item">
+                <div class="accordeon__heading">Слоновая кость</div>
+                <div class="accordeon__content">
+                    <p class="accordeon__paragraph">
+                        Популярный материал для резьбы, а&nbsp;также для инкрустации в&nbsp;черно-белой гамме. Кстати,
+                        кость не&nbsp;всегда принадлежала слонам&nbsp;&mdash; египтяне не&nbsp;гнушались
+                        и&nbsp;бегемотами.
+                    </p>
+                    <img src="../assets/east-and-africa/egypt/materials-1.png" alt="accordeon image"
+                        class="accordeon__image">
+                </div>
             </div>
-            <hr class="carousel__hr">
+            <div class="accordeon__item">
+                <div class="accordeon__heading">Слоновая кость</div>
+                <div class="accordeon__content">
+                    <p class="accordeon__paragraph">
+                        Популярный материал для резьбы, а&nbsp;также для инкрустации в&nbsp;черно-белой гамме. Кстати,
+                        кость не&nbsp;всегда принадлежала слонам&nbsp;&mdash; египтяне не&nbsp;гнушались
+                        и&nbsp;бегемотами.
+                    </p>
+                    <img src="../assets/east-and-africa/egypt/materials-1.png" alt="accordeon image"
+                        class="accordeon__image">
+                </div>
+            </div>
         </div>
     </article>
 
@@ -873,6 +1048,7 @@
     <script src="../scripts/points.js"></script>
     <script src="../scripts/gallery.js"></script>
     <script src="../scripts/images-scripts.js"></script>
+    <script src="../scripts/accordeon.js"></script>
 </body>
 
 </html>
